@@ -1,0 +1,21 @@
+from IP_TOOL import getip
+from IP_TOOL import util
+
+def main():
+    ip_list=getip.getip()
+    verified_iplist=getip.verifyip_multithread(ip_list)
+    print ('crawl verified ip list is : ',verified_iplist)
+    getip.data_persistence(verified_iplist)
+
+
+
+
+if __name__=='__main__':
+    # get ip and save in db
+    main()
+
+    #refresh
+    # getip.refresh_db()
+
+    # random choice ip
+    print(util.get())
