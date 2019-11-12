@@ -15,7 +15,7 @@ if __name__=='__main__':
     main()
 
     #refresh
-    # getip.refresh_db()
+    getip.refresh_db()
 
     # random choice ip
     print(util.get())

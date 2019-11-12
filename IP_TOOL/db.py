@@ -11,7 +11,7 @@ def init():
         cursor.execute(mysql)
         conn.commit()
     except Exception as e:
-        print (e)
+        print(e)
         conn.rollback()
     finally:
         conn.close()
